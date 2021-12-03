@@ -62,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             //***** changed this from "let" to "var" and "cell" will need to be declared for prototype cell on storyboard (which we have to add)
-            var cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
+            var cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "kamCell")! as UITableViewCell
             
             //.. I don't think you really need this as long as you put "cell" in prototype cell identifier on storyboard
             if (cell == nil ) {
